@@ -11,12 +11,6 @@ import styles from "../styles"
 class App extends Component {
   render() {
     return (
-      <div style={styles.appStyling}>
-        <h1>To Do List</h1>
-        <UserInfo actions={this.props.actions} user={this.props.user} style="listStyling"/>
-        <ToDoInput addTodo={this.props.actions.addTodo}/>
-        <ToDoList actions={this.props.actions} todos={this.props.todos} />
-      </div>
     )
   }
 }

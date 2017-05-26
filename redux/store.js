@@ -8,6 +8,6 @@ let finalCreateStore = compose(
   applyMiddleware(thunk, createLogger())
 )(createStore)
 
-export default function configureStore(initialState = {todos: [], user: {} }) {
+export default function configureStore(initialState = {}) {
   return finalCreateStore(rootReducer, initialState);
 }
