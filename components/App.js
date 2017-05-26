@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import ToDoInput from './ToDoInput';
-import ToDoList from './ToDoList';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import actions from '../redux/actions'
-import UserInfo from './UserInfo'
-import styles from "../styles"
+import Menu from './Menu'
+import Viz from './Viz'
+import actions from '../redux/actions';
 
 // es6 class syntax
 class App extends Component {
   render() {
     return (
+      <div>
+        <Menu/>
+        <Viz/>
+      </div>
     )
   }
 }
